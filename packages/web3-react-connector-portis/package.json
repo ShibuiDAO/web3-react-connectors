@@ -1,0 +1,29 @@
+{
+	"name": "@shibuidao/web3-react-connector-portis",
+	"version": "1.0.0",
+	"description": "",
+	"author": "Nejc Drobnic <ethoarx@gmail.com>",
+	"license": "BSD-3-Clause",
+	"main": "dist/index.js",
+	"scripts": {
+		"build": "tsc -b src",
+    "prepublishOnly": "yarn build"
+	},
+	"dependencies": {},
+	"devDependencies": {},
+	"files": [
+		"dist",
+		"!dist/*.tsbuildinfo"
+	],
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/ShibuiDAO/web3-react-connectors.git"
+	},
+	"bugs": {
+		"url": "https://github.com/ShibuiDAO/web3-react-connectors/issues"
+	},
+	"homepage": "https://github.com/ShibuiDAO/web3-react-connectors/tree/main/packages/web3-react-connector-portis#readme",
+	"publishConfig": {
+		"access": "public"
+	}
+}
