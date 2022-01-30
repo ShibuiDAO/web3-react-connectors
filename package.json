@@ -7,19 +7,6 @@
 	"scripts": {
 		"build": "turbo run build"
 	},
-	"turbo": {
-		"pipeline": {
-			"build": {
-				"dependsOn": [
-					"^build"
-				],
-				"outputs": [
-					"dist/**",
-					"build/**"
-				]
-			}
-		}
-	},
 	"dependencies": {},
 	"devDependencies": {
 		"@sapphire/eslint-config": "^4.1.0",
@@ -45,5 +32,6 @@
 		"url": "https://github.com/ShibuiDAO/web3-react-connectors/issues"
 	},
 	"homepage": "https://github.com/ShibuiDAO/web3-react-connectors#readme",
-	"prettier": "@sapphire/prettier-config"
+	"prettier": "@sapphire/prettier-config",
+	"packageManager": "yarn@1.22.17"
 }
