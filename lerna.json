@@ -1,6 +1,35 @@
 {
-  "packages": [
-    "packages/*"
-  ],
-  "version": "0.0.0"
+  "packages": ["packages/*"],
+  "version": "independent",
+  "npmClient": "yarn",
+  "useWorkspaces": true,
+  "command": {
+    "publish": {
+      "conventionalCommits": true,
+      "push": true,
+      "ignoreChanges": ["**/*.md", "**/tests/**"],
+      "registry": "https://registry.npmjs.org/"
+    },
+    "version": {
+      "allowBranch": "main",
+      "conventionalCommits": true,
+      "push": true,
+      "createRelease": "github",
+      "message": "chore(release): publish"
+    },
+    "create": {
+      "license": "BSD-3-Clause",
+      "keywords": [
+        "shibui",
+        "shibuidao",
+        "dao",
+        "typescript",
+        "ts",
+        "yarn",
+        "web3",
+        "web3-react",
+        "react"
+      ]
+    }
+  }
 }
